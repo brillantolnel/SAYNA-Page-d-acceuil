@@ -1,0 +1,109 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face{
+    font-family: "Nexa-Heavy";
+    src: url("myfont/Nexa-Heavy.ttf");
+    font-style: normal;
+    font-size: 800;
+  }
+  @font-face{
+    font-family: "Nexa-Heavy";
+    src: url("myfont/CrimsonText-Regular.ttf");
+    font-style: normal;
+    font-size: 600;
+  }
+
+  h1{
+    font-family: Nexa-Heavy;
+    font-size: 800;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  section{
+    font-family: Nexa-Heavy;
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: 3px;    
+  }
+section,h2{
+    margin-left: 20px;
+}
+a:link{
+    color: #a66;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+a:visited{
+    color: #a66;
+}
+a:focus{
+    color: #a66;
+    border-bottom: none;
+}
+a:hover{
+    color: #a66;
+    text-decoration-line: none;
+}
+a:active{
+    background: #ff00;
+    color: blue;
+}
+a[href^="https"] {
+    background: url("icons/icon.png") no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
+ul,ol{
+    line-height: 1.8;
+}
+ul {
+    list-style: square url("icons/puce2.png") inside;
+  }
+footer{
+    text-align: center;
+}
